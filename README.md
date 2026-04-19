@@ -33,6 +33,7 @@ The goal of the project is to showcase core RTOS concepts commonly used in embed
 - West build system
 - Native simulation target
 - VS Code
+- CMake / West
 
 ## System Architecture
 
@@ -59,15 +60,6 @@ Consumed: temp=31 vib=20
 - Integrate MPU6050 sensor
 - Add priority scheduling
 - Add watchdog/error handling
-
-## Technologies
-- Zephyr RTOS
-- Embedded C
-- Multithreading
-- FIFO / Message Queues
-- Real-Time Scheduling
-- Native Simulation
-- CMake / West
 
 
 ## Project Structure
