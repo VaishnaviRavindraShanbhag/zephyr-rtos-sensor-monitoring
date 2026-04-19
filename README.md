@@ -72,3 +72,7 @@ Consumed: temp=31 vib=20
 ├── CMakeLists.txt
 └── README.md
 ```
+
+## Build Commands 
+west build -b nucleo_f401re -p always .
+west flash
