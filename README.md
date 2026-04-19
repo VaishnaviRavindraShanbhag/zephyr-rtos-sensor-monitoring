@@ -71,6 +71,4 @@ Consumed: temp=31 vib=20
 ├── prj.conf
 ├── CMakeLists.txt
 └── README.md
-
-
-
+...
