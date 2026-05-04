@@ -84,14 +84,7 @@ struct sensor_data {
 };
 
 ## Example output 
-*** Booting Zephyr OS build v4.4.0-rc1-178-gccfd5efa09f9 ***
-[00:00:00.014,000] <inf> app: Sensor monitoring application started
-[00:00:01.014,000] <inf> app: Producer: sensors ready
-[00:00:02.021,000] <inf> app: Consumer: temp=23 C vib=14965 accel=(1762,6153,-7050)
-[00:00:03.024,000] <inf> app: Consumer: temp=23 C vib=14875 accel=(1649,6200,-7026)
-[00:00:41.191,000] <wrn> app: State changed: WARNING
-[00:00:43.197,000] <err> app: State changed: FAULT
-[00:00:44.201,000] <inf> app: State changed: NORMAL
+
 
 <img width="1147" height="286" alt="image" src="https://github.com/user-attachments/assets/0c0239a2-2b35-473e-846c-5153d029b472" />
 
