@@ -128,11 +128,18 @@ Implemented and tested:
 └── README.md
 ```
 ## Build and Flash
+
+```bash
 python -m west build -b nucleo_f401re -s . -p always
 python -m west flash
+```
 
 ## Serial Monitor
+
+```bash
 python -m serial.tools.miniterm COM3 115200
-- Press the RESET button on the Nucleo board after opening the serial monitor.
+```
+
+Press the RESET button on the Nucleo board after opening the serial monitor.
 
 
