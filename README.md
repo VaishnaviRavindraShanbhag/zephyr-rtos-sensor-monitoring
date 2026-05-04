@@ -68,10 +68,10 @@ NORMAL / WARNING / FAULT
 ```
 
 ## Thread Design
-## Producer Thread
+### Producer Thread
 The producer thread runs periodically every 1 second. It reads live sensor data from the BME280 and MPU6050, converts the values into a structured format, derives a simple vibration metric from accelerometer readings, and pushes the result into a Zephyr message queue.
 
-## Consumer Thread
+### Consumer Thread
 The consumer thread waits on the message queue, receives sensor packets, logs the readings, and classifies the system state based on temperature and vibration thresholds.
 
 ## Sensor Data Structure
