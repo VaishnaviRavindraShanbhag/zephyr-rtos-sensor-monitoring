@@ -125,6 +125,6 @@ python -m west flash
 
 ## Serial Monitor
 python -m serial.tools.miniterm COM3 115200
-Press the RESET button on the Nucleo board after opening the serial monitor.
+- Press the RESET button on the Nucleo board after opening the serial monitor.
 
 
