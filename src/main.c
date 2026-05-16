@@ -1,10 +1,10 @@
-#include <zephyr/kernel.h>
-#include <zephyr/device.h>
-#include <zephyr/drivers/sensor.h>
-#include <zephyr/logging/log.h>
+#include <zephyr/kernel.h>  /*includes zephyr Kernel API's*/
+#include <zephyr/device.h>  /*Required to include API's like DEVICE_DT_GET()*/
+#include <zephyr/drivers/sensor.h>  /*includes Zephyr’s generic sensor driver API*/
+#include <zephyr/logging/log.h>    
 #include "sensor_data.h"
 #include <stdlib.h>
-LOG_MODULE_REGISTER(app, LOG_LEVEL_INF);
+LOG_MODULE_REGISTER(app, LOG_LEVEL_INF);        
 K_MSGQ_DEFINE(sensor_msgq, sizeof(struct sensor_data), 10, 4);
 #define PRODUCER_STACK_SIZE 1024
 #define THREAD_PRIORITY 5
@@ -19,7 +19,7 @@ static int sensor_value_to_milli_int(struct sensor_value *val)
 }
 void producer_thread(void)
 {
-    k_sleep(K_SECONDS(1));
+    k_sleep(K_SECONDS(1));        /*VERY IMPORTANT TO GIVE THE SENSORS A SECOND TO POWER UP AND INNITIALIZE!!!*/
 
     const struct device *bme = DEVICE_DT_GET(DT_NODELABEL(bme280));
     const struct device *mpu = DEVICE_DT_GET(DT_NODELABEL(mpu6050));
